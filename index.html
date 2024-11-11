@@ -4,50 +4,86 @@
   <meta content="width=device-width,initial-scale=1.0" name="viewport">
   <title>Benedict Monster</title>
   <style>
+    /* 전체 페이지 스타일 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
-      background-color: #f7f7f7;
+      background-color: #f3f4f6;
+      color: #333;
     }
 
+    /* 컨테이너 스타일 */
     .container {
       text-align: center;
-      padding: 2rem;
-      border-radius: 10px;
+      padding: 3rem;
+      border-radius: 12px;
       background-color: #ffffff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      max-width: 300px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      transition: transform 0.3s ease;
     }
 
+    .container:hover {
+      transform: translateY(-5px);
+    }
+
+    /* 제목 스타일 */
     h1 {
-      font-size: 2rem;
-      color: #333;
-      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.5px;
     }
 
+    /* 설명 스타일 */
+    p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    /* 리스트 스타일 */
     ul {
       list-style: none;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
     }
 
-    ul li {
-      margin: 0.5rem 0;
-    }
-
+    /* 링크 스타일 */
     a {
       text-decoration: none;
-      color: #0073e6;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: color 0.3s ease;
+      color: #1a73e8;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #1a73e8;
+      border-radius: 8px;
+      transition: all 0.3s ease;
     }
 
     a:hover {
-      color: #005bb5;
+      background-color: #1a73e8;
+      color: #fff;
+    }
+
+    /* 작은 텍스트 스타일 */
+    .footer {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 1.5rem;
     }
   </style>
 </head>
@@ -58,6 +94,7 @@
       <li><a href="https://twitter.com/benedictmonster">X</a></li>
       <li><a href="https://blog.naver.com/tinypeppers">Naver Blog</a></li>
     </ul>
+    <div class="footer">&copy; 2024 Benedict Monster. All rights reserved.</div>
   </div>
 </body>
 </html>
